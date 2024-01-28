@@ -66,7 +66,7 @@ body{
 }
 
 .left .icon{
-    font-size: 20px;
+    font-size: 30px;
     color: #ff9d9d;
 }
 
@@ -190,6 +190,11 @@ body{
     width: 125px;
     color: #ff9d9d;
     font-weight: bold;
+}
+
+.date{
+    text-align: left;
+    margin-right: 10px;
 }
 
 .right_inner .li_wrap .info{
