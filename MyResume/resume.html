@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resume</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #ffe1e1,#ffd2d2,#ffc3c3,#ffb7b7,#ff9d9d);
+}
+
+.resume{
+    width: 800px;
+    background: #fff;
+    margin: 25px auto;
+    display: flex;
+}
+
+.left{
+    background: #292b2f;
+    width: 250px;
+    padding: 0 20px;
+}
+
+.right{
+    width: calc(100% - 250px); 
+}
+
+.left .img_holder{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.left .img_holder img{
+    width: 200px;
+    border-radius: 30px;
+}
+
+.pb{
+    padding-bottom: 20px;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    color: #ff9d9d;
+    position: relative;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.title:before{
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 50px;
+    height: 3px;
+    background: #ffb7b7;
+}
+
+.left .icon{
+    font-size: 30px;
+    color: #ff9d9d;
+}
+
+.left .text{
+    color: #fff;
+    font-size: 13px;
+}
+
+.contact .li_wrap{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .li_wrap .icon{
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.contact .li_wrap .text{
+    width: calc(100% - 50px);
+    word-break: break-word;
+    color: #fff;
+}
+
+.skills ul,
+.hobbies ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills .li_wrap,
+.hobbies .li_wrap{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .li_wrap{
+    background: black;
+    border: 2px solid #fff;
+}
+
+.skills .li_wrap .text,
+.hobbies .li_wrap .text{
+    margin-top: 5px;
+}
+
+.hobbies .li_wrap{
+    border: 2px solid #fff;
+    background: #fff;
+    border: 2px solid black;
+}
+
+.hobbies .li_wrap .text{
+    color: black;
+}
+
+.hobbies .li_wrap:hover{
+    background: #ffd2d2;
+}
+
+.header{
+    background: #292b2f;
+    padding: 15px 30px;
+    color: #fff;
+    height: 240px;
+}
+
+.header .name{
+    font-size: 52px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ff9d9d;
+}
+
+.header .role{
+    font-weight: 20px;
+    font-size: 20px;
+}
+
+.header .about{
+    margin-top: 20px;
+    line-height: 26px;
+}
+
+.right .inner{
+    padding: 30px;
+    color: #292b2f;
+}
+
+.right_inner{
+    margin-top: 50px;
+    color: #292b2f;
+    margin-right: 15px;
+}
+
+.right_inner .education{
+    margin-top: 30px;
+}
+
+.right_inner .li_wrap{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.right_inner .li_wrap .date{
+    width: 125px;
+    color: #ff9d9d;
+    font-weight: bold;
+}
+
+.right_inner .li_wrap .info{
+    width: calc(100% - 125px);
+    padding-left: 25px;
+    position: relative;
+}
+
+.right_inner .li_wrap .info_title{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ff9d9d;
+}
+
+.right_inner .li_wrap .info_com{
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.right_inner .li_wrap .info_cont{
+    margin-top: 15px;
+}
+
+.right_inner .li_wrap .info:before{
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+}
+
+.right_inner .li_wrap .info:after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    width: 2px;
+    height: 90px;
+    background: black;
+}
+
+.language .text{
+    color: whitesmoke;
+    list-style: none;
+}
+
+.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #ff9d9d;
+    display: block;
+    margin-top: 5px;
+    list-style: none;
+}
+
+.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #fff;
+}
+    </style>
+
+    <body>
+        <div class="wrapper">
+            <div class="resume">
+                <div class="left">
+                    <div class="img_holder">
+                        <img src="images/kim.jpg" alt="picture">
+                    </div>
+                    <div class="contact_wrap pb">
+                    <div class="title">
+                        Contact
+                    </div>
+                    <div class="contact">
+                        <ul>
+                            <li>
+                                <div class="li_wrap">
+                                    <div class="icon">
+                                        <ion-icon name="call-outline"></ion-icon>
+                                    </div>
+                                    <div class="text">09052816697</div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="li_wrap">
+                                    <div class="icon">
+                                        <ion-icon name="mail-unread-outline"></ion-icon>
+                                    </div>
+                                    <div class="text">kendramaivillar21@gmail.com</div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="li_wrap">
+                                    <div class="icon">
+                                        <ion-icon name="location-outline"></ion-icon>
+                                    </div>
+                                    <div class="text">Salvacion Polangui Albay</div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="language">
+                        <h3 class="title">Languages</h3>
+                    <ul>
+                        <li>
+                            <span class="text">English</span>
+                            <span class="percent">
+                                <div style="width: 85%;"></div>
+                            </span>
+                        </li>
+    
+                        <li>
+                            <span class="text">Tagalog</span>
+                            <span class="percent">
+                                <div style="width: 95%;"></div>
+                            </span>
+                        </li>
+                    </ul>
+                    </div>
+                    
+                </div>
+                
+                <div class="skills_wrap pb">
+                    <div class="title">
+                        Skills
+                    </div>
+                    <div class="skills">
+                        <ul>
+                            <li>
+                                <div class="li_wrap">
+                                    <div class="icon"><i class="devicon-html5-plain-wordmark"></i></div>
+                                    <div class="text">HTML</div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="li_wrap">
+                                    <div class="icon"><i class="devicon-css3-plain-wordmark"></i></div>
+                                    <div class="text">CSS</div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="li_wrap">
+                                    <div class="icon">
+                                        <i class="devicon-mysql-plain-wordmark"></i>
+                                    </div>
+                                    <div class="text">MySQL</div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="li_wrap">
+                                    <div class="icon">
+                                        <i class="devicon-java-plain"></i>
+                                    </div>
+                                    <div class="text">Java</div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="hobbies_wrap pb">
+                    <div class="title">
+                        Hobbies
+                    </div>
+
+                    <div class="hobbies">
+                        <ul>
+                            <li>
+                                <div class="li_wrap">
+                                <div class="icon"><ion-icon name="book-outline"></ion-icon></div>
+                                <div class="text">Reading</div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="li_wrap">
+                                <div class="icon"><ion-icon name="musical-notes-outline"></ion-icon></div>
+                                <div class="text">Music</div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="li_wrap">
+                                <div class="icon"><ion-icon name="bed-outline"></ion-icon></div>
+                                <div class="text">Sleep</div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="li_wrap">
+                                <div class="icon"><ion-icon name="trail-sign-outline"></ion-icon></div>
+                                <div class="text">Travel</div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="right">
+                    <div class="header">
+                        <div class="name_role">
+                            <div class="name">
+                                Kendra Mai Villar
+                            </div>
+                            <div class="role">
+                                Web Developer
+                            </div>
+                        </div>
+                        <div class="about">
+                            Motivated and detail-oriented college student seeking an entry-level position to apply academic knowledge, gain practical experience, and contribute positively to a dynamic work environment.
+                        </div>
+                    </div>
+                    <div class="right_inner">
+                        <div class="exp">
+                            <div class="title">
+                                Skills
+                            </div>
+                            <div class="exp_wrap">
+                                <ul>
+                                    <li>
+                                        <div class="li_wrap">
+                                            <div class="date"></div>
+                                            <div class="info">
+                                                <p class="info_title" style="color: black;">Strong communication and interpersonal skills</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="li_wrap">
+                                            <div class="date"></div>
+                                            <div class="info">
+                                                <p class="info_title" style="color: black;">Time management and organizational abilities</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="li_wrap">
+                                            <div class="date"></div>
+                                            <div class="info">
+                                                <p class="info_title" style="color: black;">Analytical and problem-solving skills</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="li_wrap">
+                                            <div class="date"></div>
+                                            <div class="info">
+                                                <p class="info_title" style="color: black;">Adaptability and willingness to learn</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="education">
+                            <div class="title">
+                                Education
+                            </div>
+                            <div class="education_wrap">
+                                <ul>
+                                    <li>
+                                        <div class="li_wrap">
+                                            <div class="date">
+                                                2009 - 2015
+                                            </div>
+                                            <div class="info">
+                                                <p class="info_title">Elementary</p>
+                                                <p class="info_com">Polangui South Central School</p>
+                                                <p class="info_cont">Nag graduate lang</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="li_wrap">
+                                            <div class="date">
+                                                2015 - 2019
+                                            </div>
+                                            <div class="info">
+                                                <p class="info_title">Junior High School</p>
+                                                <p class="info_com">Polangui General Comprehensive High School</p>
+                                                <p class="info_cont">Nag moving up lang</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="li_wrap">
+                                            <div class="date">
+                                                2019 - 2021
+                                            </div>
+                                            <div class="info">
+                                                <p class="info_title">Senior High School</p>
+                                                <p class="info_com">Polangui General Comprehensive High School</p>
+                                                <p class="info_cont">General Academic Strand <br>With Honor</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="li_wrap">
+                                            <div class="date">
+                                                2021 - Present
+                                            </div>
+                                            <div class="info">
+                                                <p class="info_title">College</p>
+                                                <p class="info_com">Bicol University Polangui</p>
+                                                <p class="info_cont">Bachelor of Science in Information Technology <br>
+                                                1st Year - 1st Sem - Dean's Lister <br>
+                                                1st Year - 2nd Sem - Dean's Lister <br>
+                                                2nd Year - 1st Sem - Dean's Lister <br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
