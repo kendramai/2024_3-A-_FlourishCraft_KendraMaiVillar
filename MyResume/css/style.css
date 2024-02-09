@@ -208,17 +208,14 @@ header .navbar ul li a:hover{
 }
 
 .about .row .counter .box{
-    width: 20rem;
+    width: 15rem;
     background: #F3CFC6;
     text-align: center;
     padding: 2rem;
     margin: 2rem;
 }
 
-.about .row .counter .box span{
-    font-size: 4rem;
-    color: var(--pink);
-}
+
 
 .about .row .counter .box h3{
     font-size: 2rem;
@@ -275,7 +272,7 @@ header .navbar ul li a:hover{
     background: var(--pink);
 }
 
-.portfolio .box-container{
+.project .box-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -283,22 +280,22 @@ header .navbar ul li a:hover{
     padding: 2rem 0;
 }
 
-.portfolio .box-container .box{
+.project .box-container .box{
     height: 20rem;
-    width: 26rem;
+    width: 20rem;
     border-radius: 1rem;
     margin: 2rem;
     overflow: hidden;
     cursor: pointer;
 }
 
-.portfolio .box-container .box img{
+.project .box-container .box img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.portfolio .box-container .box:hover img{
+.project .box-container .box:hover img{
     transform: scale(1.2);
 }
 
