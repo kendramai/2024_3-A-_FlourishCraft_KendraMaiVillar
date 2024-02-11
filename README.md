@@ -9,3 +9,5 @@ Alliah Micole C. Esperanza
 Joana Rose C. Mendoza
 
 Rhea Mae O. Samaniego
+
+Andrie Granario
