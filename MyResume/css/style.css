@@ -53,7 +53,7 @@ section{
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
-    border-radius: 5rem;
+    border-radius: 2rem;
 }
 
 .btn i{
@@ -84,7 +84,7 @@ header{
     z-index: 1000;
     height: 100%;
     width: 35rem;
-    background: whitesmoke;
+    background: linear-gradient(to bottom, #ffeaea, #ffe1e1, #ffd8d8, #ffc3c3, #ffb0b0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,7 +128,8 @@ header .navbar ul li a{
     color: #111;
     font-size: 2rem;
     font-weight: bold;
-    border-radius: 5rem;
+    border-radius: 2rem;
+    border: 1px solid black;
 }
 
 header .navbar ul li a:hover{
@@ -260,7 +261,7 @@ header .navbar ul li a:hover{
 
 .project .box-container .box{
     height: 20rem;
-    width: 20rem;
+    width: 40rem;
     border-radius: 1rem;
     margin: 2rem;
     overflow: hidden;
