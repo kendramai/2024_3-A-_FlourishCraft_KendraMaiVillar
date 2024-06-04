@@ -10,4 +10,4 @@ Joana Rose C. Mendoza
 
 Rhea Mae O. Samaniego
 
-Andrie Granario
+Andrie B. Granario
